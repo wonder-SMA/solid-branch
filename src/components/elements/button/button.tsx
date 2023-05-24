@@ -3,14 +3,13 @@ import './button.scss';
 
 type ButtonProps = {
   children?: ReactNode;
-  type?: string;
-  onClick?: () => void;
+  onClick: () => void;
 }
 
-const Button: FC<PropsWithChildren<ButtonProps>> = ({ children, type = 'primary', onClick }) => {
+const Button: FC<PropsWithChildren<ButtonProps>> = ({ children, onClick }) => {
 
   return (
-    <button className={`btn ${type}`} onClick={onClick}>
+    <button className="btn" onClick={onClick}>
       {children}
     </button>
   );

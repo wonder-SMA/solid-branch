@@ -10,11 +10,11 @@ const ListPage: FC = () => {
 
   const tableData = useMemo(() => (
     data?.data.map(item => ({ ...item, amount: getRandomNumber(item.amount) }))
-  ), [data]);
+  ), []);
 
   const onClick = useCallback((tabNumber: TTabNumber) => {
     setSearchParams(new URLSearchParams(`tab=${tabNumber}`));
-  }, []);
+  }, [setSearchParams]);
 
   return (
     <Table

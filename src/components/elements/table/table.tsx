@@ -38,7 +38,7 @@ const Table: FC<PropsWithChildren<TableProps>> = ({ data, tabNumber, onClick }) 
         }
       }
     }
-  }, [tableRef.current, selectedTab]);
+  }, [selectedTab]);
 
   const clickHandler: MouseEventHandler<HTMLTableRowElement> = useCallback((event) => {
     const value = (event.target as HTMLTableElement).dataset.value as TTabNumber;

@@ -1,14 +1,13 @@
 .card {
 	@apply
-	w-full
-	border-2 border-[#c5c5c5] rounded-md;
+	w-full border-2 border-[#c5c5c5] rounded-md;
 	
 	.card__header, .card__footer {
 		@apply
 		min-h-[2.7rem]
 		flex justify-center items-center
-		text-neutral-800 font-semibold
-		bg-[#f6f6f6];
+		bg-[#f6f6f6]
+		text-neutral-800 font-semibold;
 	}
 	
 	.card__header {
@@ -26,14 +25,12 @@
 		
 		h2 {
 			@apply
-			mt-1 ml-[-0.125rem]
-			tracking-[0.0475em];
+			tracking-[0.0475em] ml-[-0.125rem] mt-1;
 		}
 		
 		p {
 			@apply
-			mt-3
-			font-semibold tracking-tighter;
+			mt-3 font-semibold tracking-tighter;
 		}
 		
 		button {
@@ -48,7 +45,7 @@
 .card.heading {
 	.card__body {
 		h2 {
-			@apply mt-4 ml-[7.6rem];
+			@apply ml-[7.6rem] mt-4;
 		}
 		
 		p {

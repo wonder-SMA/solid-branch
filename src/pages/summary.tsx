@@ -31,18 +31,18 @@ const SummaryPage: FC = () => {
       content: tabTypeMap.get(key),
       buttonTitle: 'See all',
     }));
-  }, [data]);
+  }, []);
 
   const onClickOnHeadingCard = useCallback(() => {
     setIsVisibleCardList(prevState => !prevState);
-  }, [isVisibleCardList]);
+  }, []);
 
   const onClickOnCard = useCallback((id: string | undefined) => {
     if (id) {
       navigate(`/navigator?tab=${getTabNumber(id as TTransaction['type'])}`);
       window.scrollTo(0, 0);
     }
-  }, []);
+  }, [navigate]);
 
   return (
     <div className="flex flex-col gap-2">

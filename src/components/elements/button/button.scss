@@ -1,17 +1,9 @@
-.primary {
+.btn {
 	@apply
 	p-[0.375rem]
 	text-white
 	font-semibold
 	rounded-md
-	bg-[#0078d1]
+	bg-[#0078d1] hover:bg-[#2490f2] active:bg-[#0060b8]
 	transition-all duration-300;
-}
-
-.primary:hover {
-	@apply bg-[#2490f2];
-}
-
-.primary:active {
-	@apply bg-[#0060b8];
 }
