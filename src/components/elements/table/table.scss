@@ -1,0 +1,64 @@
+.table {
+	@apply border-2 rounded-xl border-[#2b2b2b];
+	
+	table {
+		@apply
+		w-full
+		max-w-md
+		border-collapse
+		table-fixed
+		text-neutral-800 font-semibold;
+		
+		thead {
+			tr {
+				@apply
+				w-full
+				mt-px
+				border-b border-[#ebebeb]
+				flex flex-row;
+				
+				th {
+					@apply
+					w-full
+					ml-[-2px]
+					px-1.5 py-2.5
+					border-x-2 border-t-2 rounded-t-xl border-[#2b2b2b]
+					font-semibold
+					cursor-pointer;
+				}
+				
+				th:last-child {
+					@apply mr-[-2px];
+				}
+				
+				th.selected {
+					@apply bg-[#e0e0e0];
+				}
+			}
+		}
+		
+		tbody {
+			@apply
+			py-10 pl-6 pr-1
+			block;
+			
+			tr {
+				@apply
+				w-full
+				pr-20 pl-9 py-[0.1375rem]
+				flex flex-row;
+				
+				td {
+					@apply
+					w-full
+					flex flex-wrap justify-center content-center
+					text-center;
+				}
+			}
+			
+			tr:not(:last-child) {
+				@apply border-b-2 border-[#ebebeb];
+			}
+		}
+	}
+}

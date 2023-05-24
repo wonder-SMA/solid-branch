@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, :before, :after {
+	@apply box-border m-0 p-0;
+}
+
+html,
+body {
+	@apply max-w-full h-full;
+}
+
+html {
+	overflow-x: hidden;
+	overflow-y: auto;
+	scrollbar-gutter: both-edges stable;
+}
+
+h2 {
+	@apply text-xl font-bold;
+}
+
+.app {
+	@apply
+	max-w-5xl
+	mx-auto p-2
+	flex flex-wrap justify-center;
+}

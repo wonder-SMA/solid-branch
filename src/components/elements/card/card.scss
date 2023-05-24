@@ -1,0 +1,67 @@
+.card {
+	@apply
+	w-full
+	border-2 border-[#c5c5c5] rounded-md;
+	
+	.card__header, .card__footer {
+		@apply
+		min-h-[2.7rem]
+		flex justify-center items-center
+		text-neutral-800 font-semibold
+		bg-[#f6f6f6];
+	}
+	
+	.card__header {
+		@apply border-b-2 border-[#c5c5c5] rounded-t-md;
+	}
+	
+	.card__footer {
+		@apply border-t-2 border-[#c5c5c5] rounded-b-md;
+	}
+	
+	.card__body {
+		@apply
+		px-5 py-4
+		flex flex-col justify-start items-start;
+		
+		h2 {
+			@apply
+			mt-1 ml-[-0.125rem]
+			tracking-[0.0475em];
+		}
+		
+		p {
+			@apply
+			mt-3
+			font-semibold tracking-tighter;
+		}
+		
+		button {
+			@apply
+			w-[9.4rem]
+			mt-[1.85rem] ml-[-0.25rem]
+			sm:self-end self-center;
+		}
+	}
+}
+
+.card.heading {
+	.card__body {
+		h2 {
+			@apply mt-4 ml-[7.6rem];
+		}
+		
+		p {
+			@apply
+			mt-2.5 mb-2
+			text-sm tracking-normal;
+		}
+		
+		button {
+			@apply
+			w-[8.5rem]
+			mt-2.5 mb-2 ml-[-0.25rem]
+			self-center;
+		}
+	}
+}
