@@ -25,7 +25,7 @@
 		
 		h2 {
 			@apply
-			tracking-[0.0475em] ml-[-0.125rem] mt-1;
+			tracking-[0.0475em] mt-1;
 		}
 		
 		p {
@@ -36,7 +36,7 @@
 		button {
 			@apply
 			w-[9.4rem]
-			mt-[1.85rem] ml-[-0.25rem]
+			mt-[1.85rem]
 			sm:self-end self-center;
 		}
 	}
@@ -45,7 +45,9 @@
 .card.heading {
 	.card__body {
 		h2 {
-			@apply ml-[7.6rem] mt-4;
+			@apply
+			mt-4 ml-0 sm:ml-[7.6rem]
+			self-center sm:self-auto;
 		}
 		
 		p {
@@ -57,7 +59,7 @@
 		button {
 			@apply
 			w-[8.5rem]
-			mt-2.5 mb-2 ml-[-0.25rem]
+			mt-2.5 mb-2
 			self-center;
 		}
 	}
